@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="portfolioManagementReportNetWorth" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e8beef25-e9b2-434c-a584-e41c8e0759bd">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Calibri" fontSize="50" isBold="false"/>
+	<style name="SubTitle" forecolor="#000000" fontName="Calibri" fontSize="18" isBold="false"/>
+	<style name="Column header" forecolor="#000000" fontName="Calibri" fontSize="14" isBold="true"/>
+	<parameter name="pageHeaderCenterRightImage" class="java.awt.Image" isForPrompting="false"/>
+	<parameter name="jasperReportPortfolioNetWorthSR" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="portfolioNetWorthSubReportDetails" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="pieChartTitleAssets" class="java.lang.String"/>
+	<parameter name="jasperReportAssetsNetWorthSR" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="assetsNetWorthPieChartData" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="pieChartTitleLiabilities" class="java.lang.String"/>
+	<parameter name="jasperReportLiabilitiesNetWorthSR" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="liabilitiesNetWorthPieChartData" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="31" width="250" height="68" backcolor="#8DC4E3" uuid="6c6ca4e1-17cd-4913-93d6-5e670ea9ae8a"/>
+				<box>
+					<pen lineWidth="0.0" lineStyle="Dotted" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement style="SubTitle" x="40" y="20" width="200" height="29" uuid="8978eac3-c578-41c9-837e-48d2b0184642"/>
+					<textElement>
+						<font fontName="Calibri" size="20" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Net Worth]]></text>
+				</staticText>
+			</frame>
+			<image scaleImage="FillFrame" vAlign="Middle" isLazy="true">
+				<reportElement x="250" y="16" width="295" height="107" uuid="26ecd875-700a-479d-a18c-2dfcc7c180f7"/>
+				<imageExpression><![CDATA[$P{pageHeaderCenterRightImage}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="468" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="10" width="550" height="70" uuid="0fe98d1f-d97b-4e73-bc09-b032c0abfd44"/>
+				<dataSourceExpression><![CDATA[$P{portfolioNetWorthSubReportDetails}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{jasperReportPortfolioNetWorthSR}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="0" y="330" width="180" height="130" uuid="243f303d-2632-4384-8595-933276842d6e"/>
+				<subreportParameter name="pieChartTitleAssets2">
+					<subreportParameterExpression><![CDATA[$P{pieChartTitleAssets}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{assetsNetWorthPieChartData}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{jasperReportAssetsNetWorthSR}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="270" y="330" width="180" height="130" uuid="df228ab1-9cbd-4437-93ba-8107933dccb7"/>
+				<subreportParameter name="pieChartTitleLiabilities2">
+					<subreportParameterExpression><![CDATA[$P{pieChartTitleLiabilities}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{liabilitiesNetWorthPieChartData}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{jasperReportLiabilitiesNetWorthSR}]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement x="0" y="300" width="270" height="30" uuid="57fbd72d-4ed5-4f31-8fc4-95fca199267b"/>
+				<box>
+					<pen lineColor="#868686"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#868686"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="300" width="270" height="30" uuid="199e308c-1e89-4c9d-9320-d254fc3affa7"/>
+				<box>
+					<pen lineColor="#868686"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#868686"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="470" y="2" width="80" height="20" uuid="14bad2ac-3a56-4cf4-b4dd-310b8fcd2120"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${CURRENT_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

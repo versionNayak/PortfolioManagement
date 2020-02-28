@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="productRecommendationTableSubReport" pageWidth="530" pageHeight="842" columnWidth="530" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f6474938-467e-4434-9b7e-d65ec276cc47">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="subAssetClass" class="java.lang.String"/>
+	<field name="recommendedProduct" class="java.lang.String"/>
+	<field name="productAllocationPercentage" class="java.lang.String"/>
+	<field name="lumpsumAmount" class="java.lang.String"/>
+	<group name="subAssetClassGroup">
+		<groupExpression><![CDATA[$F{subAssetClass}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="130" height="30" uuid="431fbe4c-8c7f-4928-a929-7c4344801803"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Sub Asset Class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="120" height="30" uuid="a21db683-c6ab-4062-b53e-6afc00e886dc"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Product Allocation 
+ (%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="130" height="30" uuid="350617bc-901b-41dd-a928-ee9be19e8e2f"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Lumpsum Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="0" width="150" height="30" uuid="0cc5b885-f690-4812-983c-e2127e8906e9"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Recommended Product]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="130" height="30" uuid="1ccbfb84-7ee3-4eea-8de3-a3d7b1c218a3">
+					<printWhenExpression><![CDATA[$V{subAssetClassGroup_COUNT} == 1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA[$F{subAssetClass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="120" height="30" uuid="5fdb3aec-1250-471f-9daf-727cfb0f2862"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{productAllocationPercentage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="130" height="30" uuid="36f59139-0b54-4276-92b8-922c4c544caa"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{lumpsumAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="150" height="30" uuid="d317e9e1-a9e7-4c52-af22-e6824c7b7c8c"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{recommendedProduct}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

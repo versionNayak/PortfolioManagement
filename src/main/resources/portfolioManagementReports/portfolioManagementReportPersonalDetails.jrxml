@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="portfolioManagementReportPersonalDetails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27c49986-706c-4f48-a271-f48ce31add5d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
+	<style name="SubTitle" forecolor="#000000" fontName="Calibri" fontSize="18" isBold="false"/>
+	<parameter name="pageHeaderCenterRightImage" class="java.awt.Image" isForPrompting="false"/>
+	<parameter name="jasperReportClientDetailsSR" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="clientDetailsSubReportDetails" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="jasperReportFamilyDetailsSR" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="familyDetailsSubReportDetails" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="jasperReportContactDetailsSR" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="contactDetailsSubReportDetails" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="135" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-10" y="31" width="260" height="68" backcolor="#8DC4E3" uuid="6c6ca4e1-17cd-4913-93d6-5e670ea9ae8a"/>
+				<box>
+					<pen lineWidth="0.0" lineStyle="Dotted" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement style="SubTitle" x="40" y="20" width="170" height="29" uuid="8978eac3-c578-41c9-837e-48d2b0184642"/>
+					<textElement>
+						<font fontName="Calibri" size="20" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Personal Details]]></text>
+				</staticText>
+			</frame>
+			<image scaleImage="FillFrame" vAlign="Middle" isLazy="true">
+				<reportElement x="250" y="16" width="300" height="107" uuid="26ecd875-700a-479d-a18c-2dfcc7c180f7"/>
+				<imageExpression><![CDATA[$P{pageHeaderCenterRightImage}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="190" splitType="Stretch">
+			<subreport>
+				<reportElement x="-30" y="0" width="560" height="80" uuid="2eaa28ab-4cf3-48a5-bab0-672dba86119f"/>
+				<dataSourceExpression><![CDATA[$P{clientDetailsSubReportDetails}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{jasperReportClientDetailsSR}]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="-30" y="100" width="560" height="80" uuid="2eaa28ab-4cf3-48a6-bab0-672dba86119f"/>
+				<dataSourceExpression><![CDATA[$P{familyDetailsSubReportDetails}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{jasperReportFamilyDetailsSR}]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="107">
+			<subreport>
+				<reportElement x="-30" y="20" width="560" height="80" uuid="2eaa28ab-4cf3-48a6-bab0-672dba86219f"/>
+				<dataSourceExpression><![CDATA[$P{contactDetailsSubReportDetails}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{jasperReportContactDetailsSR}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="470" y="2" width="80" height="20" uuid="14bad2ac-3a56-4cf4-b4dd-310b8fcd2120"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${CURRENT_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

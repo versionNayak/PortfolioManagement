@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="equityOverviewByProductTypeSubReport" pageWidth="270" pageHeight="842" columnWidth="270" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ce6e17ca-1221-4245-8928-9fc63ab92e3c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="pieChartTitleEquityOverviewByProductType2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="key" class="java.lang.String"/>
+	<field name="value" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="202" splitType="Stretch">
+			<pieChart>
+				<chart isShowLegend="true" evaluationTime="Report" customizerClass="com.finlabs.finexa.jasper.report.PortfolioEquityOverviewByProductTypePieCustomizer" renderType="image" theme="default">
+					<reportElement mode="Transparent" x="0" y="0" width="270" height="200" uuid="8aa8e987-29ca-4fc2-923b-13b28478b79c"/>
+					<box bottomPadding="0">
+						<pen lineColor="#868686"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#868686"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					</box>
+					<chartTitle>
+						<font fontName="Calibri" size="16" isBold="true"/>
+						<titleExpression><![CDATA[$P{pieChartTitleEquityOverviewByProductType2}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend position="Bottom">
+						<font fontName="Calibri" size="11"/>
+					</chartLegend>
+				</chart>
+				<pieDataset minPercentage="1.0">
+					<keyExpression><![CDATA[$F{key}]]></keyExpression>
+					<valueExpression><![CDATA[$F{value}]]></valueExpression>
+				</pieDataset>
+				<piePlot isShowLabels="true" isCircular="true" labelFormat="{2}">
+					<plot backgroundAlpha="1.0" foregroundAlpha="1.0">
+						<seriesColor seriesOrder="0" color="#95CEFF"/>
+						<seriesColor seriesOrder="1" color="#F7A35C"/>
+						<seriesColor seriesOrder="2" color="#90ED7D"/>
+						<seriesColor seriesOrder="3" color="#8085D9"/>
+						<seriesColor seriesOrder="4" color="#F15C80"/>
+						<seriesColor seriesOrder="5" color="#3A3A4F"/>
+						<seriesColor seriesOrder="6" color="#727276"/>
+						<seriesColor seriesOrder="7" color="#5ADEDC"/>
+						<seriesColor seriesOrder="8" color="#9164AA"/>
+						<seriesColor seriesOrder="9" color="#CDAA5F"/>
+						<seriesColor seriesOrder="10" color="#558769"/>
+						<seriesColor seriesOrder="11" color="#A56E69"/>
+					</plot>
+					<itemLabel color="#000000" backgroundColor="#FFFFFF">
+						<font fontName="Calibri" size="11"/>
+					</itemLabel>
+				</piePlot>
+			</pieChart>
+		</band>
+	</title>
+</jasperReport>

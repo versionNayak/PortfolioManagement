@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="financialPlanningClientDetails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7ed6944b-39cc-46f4-b614-2ba03a1c3e04">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="clientFullName" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="dateOfBirth" class="java.lang.String"/>
+	<field name="maritalStatusDesc" class="java.lang.String"/>
+	<field name="residentTypeName" class="java.lang.String"/>
+	<field name="retiredFlag" class="java.lang.String"/>
+	<field name="retirementAge" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="91" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="10" width="555" height="40" backcolor="#2664B0" uuid="214687f0-8c8a-4572-a06d-51030adca4b0"/>
+				<staticText>
+					<reportElement x="0" y="0" width="64" height="40" forecolor="#FFFFFF" uuid="d78e7431-9adf-482f-bd3b-0f08d9967337"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="64" y="0" width="70" height="40" forecolor="#FFFFFF" uuid="3f57c9ba-d55d-4a33-8f07-bc5892e958bd"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Gender]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="134" y="0" width="96" height="40" forecolor="#FFFFFF" uuid="be4c0e95-c61d-49ef-9617-4316391a6d5b"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Date Of Birth]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="230" y="0" width="80" height="40" forecolor="#FFFFFF" uuid="34d23785-b129-4967-9cb2-d227809baf70"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Marital Status]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="310" y="0" width="80" height="40" forecolor="#FFFFFF" uuid="9ace90c9-a1ba-4975-a716-2d8193b26520"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Resident Type]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="390" y="0" width="64" height="40" forecolor="#FFFFFF" uuid="749c45cb-23aa-4890-a2ed-6b2821f6c147"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Retired]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="454" y="0" width="101" height="40" forecolor="#FFFFFF" uuid="f04dc6a3-b96a-4ea2-a131-f124bd0ebd3b"/>
+					<box>
+						<pen lineColor="#2664B0"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#2664B0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11" isItalic="true" pdfFontName="Helvetica-Oblique" isPdfEmbedded="true"/>
+					</textElement>
+					<text><![CDATA[Planned        Retirement Age]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="0" y="50" width="555" height="30" uuid="d2234c26-112d-4b02-88e1-2b2ab2b47013"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="1" y="1" width="64" height="29" uuid="899707fe-37e8-4548-ad8f-271522cfd006"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{clientFullName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="66" y="1" width="70" height="29" uuid="b868cd7e-2fbc-41d9-8493-2b3084bdfad3"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{gender}.replace("M", "Male").replace("F", "Female")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="136" y="1" width="96" height="29" uuid="2b3639d9-5968-4f7e-8cc0-a14c38f9cc99"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateOfBirth}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="233" y="1" width="77" height="29" uuid="20f66acc-a39c-40e5-8d57-5eccf37ce753"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{maritalStatusDesc}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="311" y="1" width="77" height="29" uuid="f27cb538-6ddc-4615-b882-39adee20e2d3"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{residentTypeName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="388" y="1" width="64" height="29" uuid="dd7cea79-33a8-4b52-a4f1-14521c4460a7"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{retiredFlag}.replace("Y", "Yes").replace("N", "No")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="452" y="1" width="103" height="29" uuid="d4fca429-b430-4a1b-979b-fc00c459f7cf"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Calibri" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{retirementAge}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

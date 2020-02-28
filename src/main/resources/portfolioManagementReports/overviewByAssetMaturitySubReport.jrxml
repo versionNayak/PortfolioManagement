@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="overviewByAssetMaturitySubReport" pageWidth="540" pageHeight="842" columnWidth="540" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f44efbff-6faf-416a-884d-2fd41424a6b1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="overviewByAssetMaturityBarTitle2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="category" class="java.lang.String"/>
+	<field name="value" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="300">
+			<barChart>
+				<chart isShowLegend="false" evaluationTime="Report" customizerClass="com.finlabs.finexa.jasper.report.BarChartCustomizer" renderType="image" theme="default">
+					<reportElement x="0" y="0" width="540" height="300" uuid="74543448-ddad-4d56-9e58-4a45e0af186b"/>
+					<box bottomPadding="0">
+						<pen lineColor="#868686"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#868686"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					</box>
+					<chartTitle>
+						<font fontName="Calibri" size="16" isBold="true"/>
+						<titleExpression><![CDATA[$P{overviewByAssetMaturityBarTitle2}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[1]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{value}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="true" isShowTickMarks="true">
+					<plot orientation="Horizontal">
+						<seriesColor seriesOrder="0" color="#0189F9"/>
+					</plot>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000">
+							<labelFont>
+								<font fontName="Franklin Gothic Medium" size="12"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Franklin Gothic Medium" size="12"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#FFFFFF" tickLabelColor="#FFFFFF" axisLineColor="#FFFFFF"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</title>
+</jasperReport>

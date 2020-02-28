@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="currentAssetAllocationSubReport" pageWidth="540" pageHeight="842" columnWidth="540" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3cb4a9bb-e321-4c56-86d6-6624d494fab2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="boldStyle" isBold="false">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Equity Total".equals($F{subAssetClass})]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Cash Total".equals($F{subAssetClass})]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Fixed Income Total".equals($F{subAssetClass})]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Total".equals($F{subAssetClass})]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="boldStyle2" isBold="false">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Equity Total".equals($F{subAssetClass}) && !$F{currentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Cash Total".equals($F{subAssetClass}) && !$F{currentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Fixed Income Total".equals($F{subAssetClass}) && !$F{currentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Total".equals($F{subAssetClass}) && !$F{currentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="boldStyle3" isBold="false">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Equity Total".equals($F{subAssetClass}) && !$F{investmentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Cash Total".equals($F{subAssetClass}) && !$F{investmentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Fixed Income Total".equals($F{subAssetClass}) && !$F{investmentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Total".equals($F{subAssetClass}) && !$F{investmentValue}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="boldStyle4" isBold="false">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Equity Total".equals($F{subAssetClass}) && !$F{gainLoss}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Cash Total".equals($F{subAssetClass}) && !$F{gainLoss}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Fixed Income Total".equals($F{subAssetClass}) && !$F{gainLoss}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Total".equals($F{subAssetClass}) && !$F{gainLoss}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="boldStyle5" isBold="false">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Equity Total".equals($F{subAssetClass}) && !$F{cagrXirr}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Cash Total".equals($F{subAssetClass}) && !$F{cagrXirr}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Fixed Income Total".equals($F{subAssetClass}) && !$F{cagrXirr}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Total".equals($F{subAssetClass}) && !$F{cagrXirr}.isEmpty()]]></conditionExpression>
+			<style isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="subAssetClass" class="java.lang.String"/>
+	<field name="currentValue" class="java.lang.String"/>
+	<field name="investmentValue" class="java.lang.String"/>
+	<field name="gainLoss" class="java.lang.String"/>
+	<field name="cagrXirr" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="540" height="30" uuid="431fbe4c-8c7f-4928-a929-7c4344801803"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Current Asset Allocation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="20" uuid="350617bc-901b-41dd-a928-ee9be19e8e2f"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Sub Asset Class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="30" width="120" height="20" uuid="aa059f89-e220-4023-959f-79614c13d30e"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Current Value (in Rs.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="30" width="140" height="20" uuid="8f6d38fa-8a8e-4c64-8b0d-f8aacda989a0"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Investment Value (in Rs.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="30" width="90" height="20" uuid="d9354504-bab5-441f-b711-0c1bca2b351d"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Gain/Loss]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="30" width="90" height="20" uuid="567252a8-fcf9-4f64-a592-5c09f8b4eb5c"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ CAGR/XIRR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="boldStyle" x="0" y="0" width="100" height="20" uuid="1ccbfb84-7ee3-4eea-8de3-a3d7b1c218a3"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[" " + $F{subAssetClass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="boldStyle2" x="100" y="0" width="120" height="20" uuid="41df8059-d334-40f9-b261-4683749369bb"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{currentValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="boldStyle3" x="220" y="0" width="140" height="20" uuid="5f450edf-4be7-4b7d-9820-57fec3b94055"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{investmentValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="boldStyle4" x="360" y="0" width="90" height="20" uuid="377988d4-c586-45b8-8a61-e7688bfb3820"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{gainLoss}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="boldStyle5" x="450" y="0" width="90" height="20" uuid="36f59139-0b54-4276-92b8-922c4c544caa"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cagrXirr}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

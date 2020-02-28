@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="wealthRatiosSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ec03050d-30e2-4f05-b6a5-c996ffbe8f74">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="wealthRatioName" class="java.lang.String"/>
+	<field name="wealthRatio" class="java.lang.Double"/>
+	<field name="wealthRatioLogicRationale" class="java.lang.String"/>
+	<field name="wealthRatioComment" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="29" uuid="9abad3ea-e9f9-40b8-854e-38b0e48d66ec"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[   Wealth Ratios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="130" height="30" uuid="431fbe4c-8c7f-4928-a929-7c4344801803"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Ratios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="140" height="30" uuid="a21db683-c6ab-4062-b53e-6afc00e886dc"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Logic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="40" width="70" height="30" uuid="b708d685-d957-44ac-a6e6-269ba5889183"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="40" width="205" height="30" uuid="350617bc-901b-41dd-a928-ee9be19e8e2f"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Comment]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="130" height="30" uuid="1ccbfb84-7ee3-4eea-8de3-a3d7b1c218a3"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wealthRatioName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="140" height="30" uuid="5fdb3aec-1250-471f-9daf-727cfb0f2862"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wealthRatioLogicRationale}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="0" width="70" height="30" uuid="41df8059-d334-40f9-b261-4683749369bb"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wealthRatio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="205" height="30" uuid="36f59139-0b54-4276-92b8-922c4c544caa"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wealthRatioComment}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="portfolioOverviewDebtTableSubReport" pageWidth="560" pageHeight="842" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c33a5033-d4c5-4101-9593-0f1d5072aff4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="product" class="java.lang.String"/>
+	<field name="productType" class="java.lang.String"/>
+	<field name="currentValue" class="java.lang.String"/>
+	<field name="investmentValue" class="java.lang.String"/>
+	<field name="gainLoss" class="java.lang.String"/>
+	<field name="returnType" class="java.lang.String"/>
+	<field name="cagrXirr" class="java.lang.String"/>
+	<field name="lockedInUptoDate" class="java.lang.String"/>
+	<field name="maturityDate" class="java.lang.String"/>
+	<field name="maturityAmount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="20" uuid="431fbe4c-8c7f-4928-a929-7c4344801803"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="60" height="20" uuid="a21db683-c6ab-4062-b53e-6afc00e886dc"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="60" height="20" uuid="b708d685-d957-44ac-a6e6-269ba5889183"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="60" height="20" uuid="88d0015b-0733-4dae-a975-7855d33a6846"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="150" height="20" uuid="3c09604d-907f-457d-81af-c276de73f4c1"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Returns]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="170" height="20" uuid="350617bc-901b-41dd-a928-ee9be19e8e2f"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="5.0"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Maturity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="60" height="30" uuid="b29ba272-a04f-4deb-a114-ddb383d799ad"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="20" width="50" height="30" uuid="290d9d0b-6e8b-43c7-883e-c989f382e153"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Maturity Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="20" width="60" height="30" uuid="0ef7a3e7-92c3-4fe0-9881-e883ae4f1d96"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Product Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="20" width="60" height="30" uuid="f6e5f0f2-0eb2-406e-b57f-cfe8d9f051b9"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Current Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="20" width="60" height="30" uuid="7085b5e0-5de6-421c-8326-0639f62f6e8e"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Investment Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="20" width="50" height="30" uuid="6bdb1e2c-137f-458e-9751-5cb0545cb1e8"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Return Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="20" width="50" height="30" uuid="0a377c54-fbe3-42fa-af2f-da3278c849a1"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Gain/Loss]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="20" width="50" height="30" uuid="bb9bad43-8fc4-4c6c-aa06-21b1996f7789"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[CAGR/
+XIRR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="20" width="60" height="30" uuid="68a33286-d4eb-43f9-9b64-968a5320f471"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Locked-In Upto Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="20" width="60" height="30" uuid="c8aa1bfb-d5cf-40bb-afd4-a81d87b4bd42"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Maturity Date]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="60" height="30" uuid="1ccbfb84-7ee3-4eea-8de3-a3d7b1c218a3"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="60" height="30" uuid="5fdb3aec-1250-471f-9daf-727cfb0f2862"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{productType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="60" height="30" uuid="41df8059-d334-40f9-b261-4683749369bb"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{currentValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="60" height="30" uuid="a66bdbfe-06e7-47e8-8036-10823711655d"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{investmentValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="50" height="30" uuid="5f450edf-4be7-4b7d-9820-57fec3b94055"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{gainLoss}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="50" height="30" uuid="377988d4-c586-45b8-8a61-e7688bfb3820"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cagrXirr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="0" width="50" height="30" uuid="36f59139-0b54-4276-92b8-922c4c544caa"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{maturityAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="1" width="60" height="28" uuid="f1e0baf6-9e54-4d90-80cd-7f6da03c4116"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{lockedInUptoDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="50" height="30" uuid="e747c7b9-998a-493f-9729-0bd1538a813e"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{returnType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="1" width="60" height="28" uuid="a4bb7b88-1269-4da6-b5e0-2d19dbd6ee56"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#8FC4E5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{maturityDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

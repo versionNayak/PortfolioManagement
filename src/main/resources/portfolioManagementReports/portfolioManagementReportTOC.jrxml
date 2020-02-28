@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="portfolioManagementReportTOC" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d1c69df-4522-4c87-9708-77f1b4151a0d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Calibri" fontSize="50" isBold="false"/>
+	<style name="SubTitle" forecolor="#000000" fontName="Calibri" fontSize="18" isBold="false"/>
+	<style name="Column header" forecolor="#000000" fontName="Calibri" fontSize="14" isBold="true"/>
+	<parameter name="pageHeaderCenterRightImage" class="java.awt.Image" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="31" width="250" height="68" backcolor="#8DC4E3" uuid="6c6ca4e1-17cd-4913-93d6-5e670ea9ae8a"/>
+				<box>
+					<pen lineWidth="0.0" lineStyle="Dotted" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement style="SubTitle" x="40" y="20" width="120" height="29" uuid="8978eac3-c578-41c9-837e-48d2b0184642"/>
+					<textElement>
+						<font fontName="Calibri" size="20" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Contents]]></text>
+				</staticText>
+			</frame>
+			<image scaleImage="FillFrame" vAlign="Middle" isLazy="true">
+				<reportElement x="250" y="16" width="295" height="107" uuid="26ecd875-700a-479d-a18c-2dfcc7c180f7"/>
+				<imageExpression><![CDATA[$P{pageHeaderCenterRightImage}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="393" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="510" height="30" uuid="6f1667d4-8600-4ba9-a116-40044d81be72"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Notes & Disclaimer_____________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="0" width="30" height="30" uuid="f2ebe7db-71f1-48e2-8a33-a6a9f43e621d"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${NOTES_AND_DISCLAIMER_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="30" width="510" height="30" uuid="df3680cb-2f19-485c-b97e-46a72114f3a6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Introduction__________________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="30" width="30" height="30" uuid="88325654-71a2-46d0-a05f-6e5c6f360a77"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${INTRODUCTION_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="60" width="510" height="30" uuid="3aafc6d0-1603-45a8-828d-b1c0539e91c8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Personal Details________________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="60" width="30" height="30" uuid="1aa36a20-bfe9-430d-bbc5-b2566fdce77b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PERSONAL_DETAILS_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="90" width="510" height="30" uuid="3aafc6d0-1613-45a8-828d-b1c0539e91c8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Portfolio Tracker_______________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="90" width="30" height="30" uuid="1aa37a20-bfe9-430d-bbc5-b2566fdce77b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_TRACKER_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="120" width="510" height="30" uuid="aefbd70d-715b-4fc5-907c-75b77bac8986"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Net Worth____________________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="120" width="30" height="30" uuid="19f1a3dc-b802-4d45-801a-5215dfb01b0b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_NETWORTH_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="150" width="510" height="30" uuid="0a61f7db-cba2-48f5-8e41-e36e25517a24"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Wealth Ratio & Risk Profile_______________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="150" width="30" height="30" uuid="3ece83f6-c695-48ef-971a-d776c802eaa4"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_WEALTH_RATIOS_AND_RISK_PROFILE_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="180" width="510" height="30" uuid="a287b17d-c34f-403f-bd34-0f908cdc4516"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Current Asset Allocation_________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="180" width="30" height="30" uuid="209c9d34-8e5f-4a47-9bfa-6609b5c673ec"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_CURRENT_ASSET_ALLOCATION_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="210" width="510" height="30" uuid="7272327c-61fa-4c87-8e80-564aa8155123"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Recommended Asset Allocation___________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="210" width="30" height="30" uuid="b30fbf3e-3e49-43e0-95bc-99cd39c6c7b6"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_RECOMMENDED_ASSET_ALLOCATION_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="240" width="510" height="30" uuid="cd6b7797-132c-4358-872f-dcde22d8ff83"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Portfolio Overview Equity________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="240" width="30" height="30" uuid="218b5975-04a9-490f-af03-1865f28f7640"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_OVERVIEW_EQUITY_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="270" width="510" height="30" uuid="6efed2b9-372d-4735-a285-f07fc855a92f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Portfolio Overview Debt_________________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="270" width="30" height="30" uuid="1f3c2ac6-a5e2-4367-8fff-057670815556"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_OVERVIEW_DEBT_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="300" width="510" height="30" uuid="f7ee28df-8cb8-4347-ad87-57bd8b49eb3d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Portfolio Recommendation______________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="300" width="30" height="30" uuid="307d0f58-c0a1-4532-9973-6e19487015bb"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PORTFOLIO_RECOMMENDATION_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="330" width="510" height="30" uuid="28ff1f72-da6c-436e-9a1b-71a4a0bb7bb8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Product Recommendation_______________________________________________________________________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="520" y="330" width="30" height="30" uuid="99259247-421c-40ab-95c3-a473df456c19"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${PRODUCT_RECOMMENDATION_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="420" y="0" width="80" height="20" uuid="14bad2ac-3a56-4cf4-b4dd-310b8fcd2120"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["${CURRENT_PAGE_NUMBER}"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

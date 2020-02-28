@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="currentVsRecommendedSubAssetAllocationSubReport" pageWidth="280" pageHeight="842" columnWidth="280" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d9f2002-ba1d-4554-b6f3-d26b4e859a1f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="currentVsRecommendedSubAssetAllocationSubReportTitle2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="category" class="java.lang.String"/>
+	<field name="key" class="java.lang.String"/>
+	<field name="value" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="260" splitType="Stretch">
+			<stackedBarChart>
+				<chart evaluationTime="Report" renderType="image" theme="default">
+					<reportElement mode="Transparent" x="0" y="0" width="280" height="260" uuid="b32e93ef-acf6-4433-8dba-592b642ff844">
+						<property name="net.sf.jasperreports.customizer.class.1" value="com.finlabs.finexa.jasper.report.CurrentVsRecommendedSubAssetAllocationStackedBarCustomizer"/>
+						<propertyExpression name="net.sf.jasperreports.customizer.0.itemSeries"><![CDATA[$F{key}]]></propertyExpression>
+						<propertyExpression name="net.sf.jasperreports.customizer.0.category"><![CDATA[$F{category}]]></propertyExpression>
+						<propertyExpression name="net.sf.jasperreports.customizer.0.label"><![CDATA[$F{category}]]></propertyExpression>
+					</reportElement>
+					<box bottomPadding="0">
+						<pen lineColor="#868686"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#868686"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#868686"/>
+					</box>
+					<chartTitle>
+						<font fontName="Calibri" size="12" isBold="true"/>
+						<titleExpression><![CDATA[$P{currentVsRecommendedSubAssetAllocationSubReportTitle2}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend position="Right">
+						<font fontName="Calibri"/>
+					</chartLegend>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{key}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{value}]]></valueExpression>
+						<labelExpression><![CDATA[$F{key}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="true">
+					<plot backgroundAlpha="1.0" foregroundAlpha="1.0">
+						<seriesColor seriesOrder="0" color="#95CEFF"/>
+						<seriesColor seriesOrder="1" color="#F7A35C"/>
+						<seriesColor seriesOrder="2" color="#90ED7D"/>
+						<seriesColor seriesOrder="3" color="#8085D9"/>
+						<seriesColor seriesOrder="4" color="#F15C80"/>
+						<seriesColor seriesOrder="5" color="#3A3A4F"/>
+						<seriesColor seriesOrder="6" color="#727276"/>
+						<seriesColor seriesOrder="7" color="#5ADEDC"/>
+						<seriesColor seriesOrder="8" color="#9164AA"/>
+						<seriesColor seriesOrder="9" color="#CDAA5F"/>
+						<seriesColor seriesOrder="10" color="#558769"/>
+						<seriesColor seriesOrder="11" color="#A56E69"/>
+					</plot>
+					<itemLabel color="#000000" backgroundColor="#FFFFFF">
+						<font fontName="Calibri" size="10"/>
+					</itemLabel>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000">
+							<labelFont>
+								<font fontName="Calibri"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Calibri" size="8"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#FFFFFF" verticalTickLabels="true" axisLineColor="#FFFFFF">
+							<labelFont>
+								<font fontName="Calibri"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="Calibri"/>
+							</tickLabelFont>
+						</axisFormat>
+					</valueAxisFormat>
+				</barPlot>
+			</stackedBarChart>
+		</band>
+	</title>
+</jasperReport>
